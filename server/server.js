@@ -11,6 +11,11 @@ app.use(express.json());
 app.use(core());
 
 
+//ROUTES BELOW
+app.length('/',(req,res)=>{
+    res.send("Working");
+});
+
 //APP CONFIG START
 app.listen(port,()=>{
     console.log(`server running on port https://localhost:${port}`);
